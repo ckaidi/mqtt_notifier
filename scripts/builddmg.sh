@@ -1,0 +1,1 @@
+hdiutil create -fs HFS+ -srcfolder build/macos/Build/Products/Release/MqttNotifier.app -volname MqttNotifier build/macos/Build/Products/Release/MqttNotifier.dmg
