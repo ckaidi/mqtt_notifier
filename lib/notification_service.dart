@@ -27,9 +27,10 @@ class NotificationService {
   Future<void> showNotification({
     required String title,
     required String body,
-    String? payload,
+    String? payload,// 新增图片路径参数
   }) async {
-    const notificationDetails = NotificationDetails(
+    // 将HTML内容转换为纯文本
+    final notificationDetails = NotificationDetails(
       macOS: DarwinNotificationDetails(
         presentAlert: true,
         presentBadge: true,

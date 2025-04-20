@@ -144,6 +144,7 @@ class MQTTService {
         context.setTrustedCertificates(certFile.path);
         client.secure = true;
         client.securityContext = context;
+        client.autoReconnect=true;
       }
 
       await client.connect();
